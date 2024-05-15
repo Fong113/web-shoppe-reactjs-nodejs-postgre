@@ -1,0 +1,29 @@
+.item-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.item-name {
+  text-align: center;
+  // width: 100px;
+  // height: 36px;
+  overflow: hidden;
+  font-size: 13px;
+
+  &_text {
+    color: rgba(0, 0, 0, 0.7);
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-height: 18px;
+    // max-width: 150px;
+    word-wrap: break-word;
+    overflow: hidden;
+    white-space: pre-line;
+    text-transform: capitalize;
+    margin: 0;
+  }
+}
